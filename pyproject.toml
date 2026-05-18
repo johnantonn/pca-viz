@@ -1,0 +1,14 @@
+[project]
+name = "pca-viz"
+version = "0.1.0"
+description = "Educational PCA visualiser — covariance, eigenvectors, projection, reconstruction"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "plotly>=5.22",
+    "streamlit>=1.35",
+]
+
+[tool.uv]
+dev-dependencies = []
