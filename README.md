@@ -38,6 +38,13 @@ pca-viz/
 └── README.md
 ```
 
+## Related visualisers (dimensionality reduction)
+
+- **[umap-viz](https://github.com/johnantonn/umap-viz)** — **Nonlinear** 2-D embedding from a **high-D kNN fuzzy graph** and layout SGD. No single linear subspace captures the final map.
+- **[tsne-viz](https://github.com/johnantonn/tsne-viz)** — **Nonlinear** 2-D embedding via **symmetric affinities** and **KL(P‖Q)** with a Student‑t kernel; focuses on **local** structure (perplexity controls effective neighbourhood size).
+
+**Connection:** PCA here is the **linear** tool: spectrum, axes, and **reconstruction error** are explicit. **UMAP** and **t-SNE** produce **nonlinear** pictures for exploration; they can separate clusters that overlap in every linear projection. Large-*D* workflows often use **PCA as a first stage** before nonlinear embedders for speed or denoising.
+
 ## Math
 
 For **X** ∈ ℝⁿˣᵈ (*d* = 2 or 3):
